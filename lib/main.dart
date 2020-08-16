@@ -5,7 +5,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 /// 2. Consume/read a provider
 /// 3. Combine/transform providers [Computed]
 /// 4. Use multiple providers of the same type
-
 void main() {
   runApp(
     ProviderScope(
@@ -47,14 +46,9 @@ class CounterApp extends StatelessWidget {
   }
 }
 
-class Home extends StatefulWidget {
+class Home extends StatelessWidget {
   const Home({Key key}) : super(key: key);
 
-  @override
-  _HomeState createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
